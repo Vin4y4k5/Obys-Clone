@@ -13,6 +13,10 @@ html,body{
   width: 100%;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 #main{
   position: relative;
   background-color: #111;
@@ -150,18 +154,172 @@ html,body{
 }
 
 .middle h1{
-  font-size: 6.8vw;
+  font-size: 7vw;
   text-transform: uppercase;
+  line-height: 7vw;
 }
 
 .middle h2{
-  font-size: 6.8vw;
+  font-size: 7vw;
   text-transform: uppercase;
+  border-bottom: 0.5vw solid #fff;
+  padding-bottom: 0.5vw ;
+  line-height: 7vw;
 }
 
 .middle h2:hover{
   -webkit-text-stroke: 1px #fff;
   font-weight: 100;
   color: transparent;
+  border-bottom: 0.5vw solid #ffffff00;
 }
 
+#page2{
+  height: 100vh;
+  width: 100%;
+  padding-top: 20vh;
+  position: relative;
+  background-color: #161616;
+}
+
+#video-container{
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  background-color: aqua;
+  left: 30%;
+  background-image: url(./Showreel-2022-preview-1.jpg);
+}
+
+#video-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#video-container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-cursor{
+  height: 10vw;
+  width: 10vw;
+  background-color: #FFA63D;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  z-index: 99;
+  right: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#video-cursor i{
+  font-size: 2.5vw;
+  color: #fff;
+}
+
+#page3{
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+#page4{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #161616;
+  position: relative;
+  padding: 5vh;
+}
+
+#page4-content{
+  width: 75vw;
+  position: relative;
+  margin-left: 25%;
+}
+
+#page4-content h1{
+  font-size: 7vw;
+}
+
+#page4-content .underline{
+  height: 2px;
+  width: 90%;
+  background-color: white;
+  margin: 1.5vw 0;
+}
+
+#page4-content>p{
+  font-size: 2vw;
+  width: 45%;
+  margin: 4vw 0 5vw 0;
+}
+
+#page4-flex{
+  display: flex;
+}
+
+#page4-flex img{
+  height: 85vh;
+}
+
+#page4-flex p{
+  font-size: 1.2vw;
+  width: 25%;
+  margin: 0 2vw;
+}
+
+#page4-elem{
+  width: 58%;
+  padding: 4vw 4vw;
+  background-color: #3F7Df4;
+  position: relative;
+  margin-top: -20vh ;
+  margin-left: 25vw;
+}
+
+#page4-elem .elem{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.8vw 0;
+  border-bottom: 1px solid #fff;
+}
+
+.elem p{
+  width: 60%;
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+.elem h4{
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+#page4-content .underline2{
+  height: 2px;
+  width: 90%;
+  background-color: white;
+  margin: 12vw 0;
+
+}
+
+.underline2 h4{
+  padding: 2vw 0;
+  font-weight: 200;
+}
+
+#page5{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #161616;
+  padding: 5vw 0;
+
+}

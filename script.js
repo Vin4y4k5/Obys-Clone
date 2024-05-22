@@ -36,7 +36,7 @@ tl.to(".line h2" , {
 tl.to("#loader", {
   opacity:0,
   duration:0.3,
-  delay:2,
+  delay:0, // change this to 2.
 })
 
 tl.from("#page1" , {
@@ -75,3 +75,4 @@ function cursorAnimation(){
 loadingAnimation()
 cursorAnimation()
 
+// 2:02:00
