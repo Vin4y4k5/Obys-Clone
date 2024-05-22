@@ -18,10 +18,15 @@ html,body{
   background-color: #111;
 }
 
-#page1{
-  height: 100vh;
-  width: 100%;
-  background-color: #161616;
+#cursor{
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.747);
+  position: fixed;
+  z-index: 999;
+  mix-blend-mode: difference;
+  transform: translate(-50% , -50%);
 }
 
 #loader{
@@ -29,7 +34,7 @@ html,body{
   height: 100%;
   width: 100%;
   z-index: 999;
-  background-color: #0B0B0B;
+  background-color: #080808;
   padding: 10vw 20vh;
 }
 
@@ -103,5 +108,60 @@ html,body{
     font-weight: 500;
     opacity: 0;
   }
-} 
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #161616;
+}
+
+#page1 #nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vw 10vw;
+}
+
+#nav #nav-part2{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+#nav-part2 h3{
+  font-size: 1.2vw;
+  font-weight: 300;
+}
+
+.middle{ 
+  width: 70%;
+  margin-left: 30%;
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.middle:nth-child(2){
+  margin-top: 4vw;
+}
+
+.middle h1{
+  font-size: 6.8vw;
+  text-transform: uppercase;
+}
+
+.middle h2{
+  font-size: 6.8vw;
+  text-transform: uppercase;
+}
+
+.middle h2:hover{
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 100;
+  color: transparent;
+}
 
