@@ -127,6 +127,16 @@ body{
   padding: 4vw 10vw;
 }
 
+#page1::before{
+  content: "01";
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  position: absolute;
+  left: 23%;
+  top: 26.5%;
+}
+
 #nav #nav-part2{
   display: flex;
   align-items: center;
@@ -145,7 +155,6 @@ body{
   height: fit-content;
   display: flex;
   align-items: center;
-  position: relative;
   z-index: 9999;
 }
 
@@ -246,6 +255,17 @@ body{
 
 #page4-content h1{
   font-size: 7vw;
+  position: relative;
+}
+
+#page4-content h1::before{
+  content: "03";
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -10%;
+  top: 8%;
+  position: absolute;
 }
 
 #page4-content .underline{
@@ -320,6 +340,127 @@ body{
   min-height: 100vh;
   width: 100%;
   background-color: #161616;
-  padding: 5vw 0;
+  position: relative;
 
+}
+
+.marq{
+  white-space: nowrap;
+  margin-bottom: -3vw;
+}
+
+.marq h1{
+  font-size: 8vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 100;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marq-anime;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes marq-anime {
+  from{
+    transform: translateX(0);
+
+  }
+  to{
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.marq2{
+  white-space: nowrap;
+  margin-bottom: -3vw;
+}
+
+.marq2 h1{
+  font-size: 8vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 100;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marq-anime;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+
+}
+
+.marq span, .marq2 span{
+  font-family: "silk serif";
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
+#page6{
+  min-height: 80vh;
+  width: 100%;
+  background-color: #161616;
+}
+
+#page6 h1{
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  margin-left: 30%;
+  position: relative;
+}
+
+#page6 .underline{
+  height: 1px;
+  width: 65%;
+  background-color: white;
+  margin: 3vw 30%;
+}
+
+#page6 #details{
+  display: flex;
+  margin-left: 30%;
+}
+
+#details #box{
+  width: 30%;
+}
+
+#box h6{
+  font-size: 1.2vw;
+  font-weight: 100;
+  margin-bottom: 2vw;
+}
+
+#box h5{
+  font-size: 1.7vw;
+  font-weight: 100;
+  width: 50%;
+}
+
+#page6 .underline2{
+  height: 1px;
+  width: 65%;
+  background-color: white;
+  margin: 5vw 10%  0 30%;
+}
+
+#page6>h5{
+  margin: 2vw 30%;
+  font-size: 1.2vw;
+  font-weight: 100;
+}
+
+#page6 h1::before{
+  content: "04";
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -10%;
+  top: 8%;
+  position: absolute;
 }

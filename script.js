@@ -8,9 +8,9 @@ var tl = gsap.timeline();
 tl.from(".line h1" , {
   y: 150,
   duration: 0.6,
-  delay: 0.5,
   stagger: 0.25,
 })
+
 
 tl.from("#line1-part1" ,{
   opacity:0,
@@ -36,7 +36,7 @@ tl.to(".line h2" , {
 tl.to("#loader", {
   opacity:0,
   duration:0.3,
-  delay:0, // change this to 2.
+  delay:2, // --  change this to 2.
 })
 
 tl.from("#page1" , {
@@ -75,4 +75,5 @@ function cursorAnimation(){
 loadingAnimation()
 cursorAnimation()
 
-// 2:02:00
+// 2:02:04
+
