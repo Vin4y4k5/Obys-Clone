@@ -19,7 +19,7 @@ body{
 
 #main{
   position: relative;
-  background-color: #111;
+  background-color: #161616;
 }
 
 #cursor{
@@ -115,7 +115,7 @@ body{
 }
 
 #page1{
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: #161616;
 }
@@ -134,7 +134,7 @@ body{
   font-family: "silk serif";
   position: absolute;
   left: 23%;
-  top: 26.5%;
+  top: 22%;
 }
 
 #nav #nav-part2{
@@ -184,9 +184,9 @@ body{
 }
 
 #page2{
-  height: 100vh;
+  height: 120vh;
   width: 100%;
-  padding-top: 20vh;
+  padding-top: 10vh;
   position: relative;
   background-color: #161616;
 }
