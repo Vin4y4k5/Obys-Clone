@@ -178,7 +178,6 @@ cursorAnimation()
 imageAnimation()
 
 // 1:25:50 git add .
-// 1:15:00
 
 document.addEventListener("mousemove" , function(dets) {
   gsap.to("#flag" , {
