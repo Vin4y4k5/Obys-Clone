@@ -101,6 +101,66 @@ function cursorAnimation(){
   })
   
   Shery.makeMagnet("#nav-part2 h3", {});
+
+
+  var videoContainer = document.querySelector("#video-container");
+  var video = document.querySelector("#video-container video")
+  videoContainer.addEventListener("mouseenter", function(){
+    videoContainer.addEventListener("mousemove" , function(dets){
+      gsap.to("#cursor" , {
+        opacity:0
+      })
+      gsap.to("#video-cursor" , {
+        left:dets.x - 500,
+        y:dets.y - 280
+      })
+    })
+  } )
+  videoContainer.addEventListener("mouseleave" ,function(){
+    gsap.to("#cursor" , {
+      opacity:1
+    })
+    gsap.to("#video-cursor" , {
+      left:"70%",
+      top:"5%",
+      
+    })
+  })
+
+
+  var flag = 0
+  videoContainer.addEventListener("click" , function(){
+    if(flag == 0){
+      video.play()
+      video.style.opacity = 1
+      document.querySelector("#video-cursor").innerHTML = `<i class="ri-pause-mini-line"></i>`
+      gsap.to("#video-container img" , {
+        opacity:0,
+      },
+      gsap.to("#video-cursor" ,{
+        scale:0.5
+      }),
+      flag = 1
+    )}
+    else{
+      video.pause()
+      video.style.opacity = 0
+      document.querySelector("#video-cursor").innerHTML = `<i class="ri-play-fill"></i>`
+      gsap.to("#video-container img" , {
+        opacity:1,
+      },
+      gsap.to("#video-cursor" ,{
+        scale:1
+    }),
+      flag = 0
+    )}
+    
+  })
+
+
+
+
+
 }
 
 function imageAnimation(){
@@ -118,3 +178,4 @@ cursorAnimation()
 imageAnimation()
 
 // 1:25:50 git add .
+// 50:00 - 1:14:45 second video
