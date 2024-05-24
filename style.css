@@ -619,3 +619,15 @@ body{
   pointer-events: none;
 }
 
+#flag{
+  height: 25vw;
+  position: absolute;
+  top: 0%;
+  opacity: 0;
+  transform: translate(-50% , -50%);
+}
+
+#mid3{
+  z-index: 999;
+  position: relative;
+}

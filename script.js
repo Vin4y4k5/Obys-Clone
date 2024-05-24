@@ -123,7 +123,7 @@ function cursorAnimation(){
     gsap.to("#video-cursor" , {
       left:"70%",
       top:"5%",
-      
+
     })
   })
 
@@ -178,4 +178,24 @@ cursorAnimation()
 imageAnimation()
 
 // 1:25:50 git add .
-// 50:00 - 1:14:45 second video
+// 1:15:00
+
+document.addEventListener("mousemove" , function(dets) {
+  gsap.to("#flag" , {
+    x:dets.x,
+    y:dets.y
+  })
+})
+
+document.querySelector("#mid3").addEventListener("mouseenter" , function(){
+  gsap.to("#flag" , {
+    opacity:1
+  })
+})
+
+document.querySelector("#mid3").addEventListener("mouseleave" , function(){
+  gsap.to("#flag" , {
+    opacity:0
+  })
+})
+
