@@ -1,3 +1,4 @@
+
 function locomotive(){
     
   gsap.registerPlugin(ScrollTrigger);
@@ -33,8 +34,6 @@ function locomotive(){
 function loadingAnimation(){
   
 var tl = gsap.timeline();
-// setTimeout - some kind of delay
-// setIntervel - some kind of Loop
 
 tl.from(".line h1" , {
   y: 150,
@@ -67,7 +66,7 @@ tl.to(".line h2" , {
 tl.to("#loader", {
   opacity:0,
   duration:0.3,
-  delay:0, // --  change this to 2.
+  delay:2, // --  change this to 2.
 })
 
 tl.from("#page1" , {
@@ -171,14 +170,6 @@ function imageAnimation(){
   })
 }
 
-
-locomotive()
-loadingAnimation()
-cursorAnimation()
-imageAnimation()
-
-// 1:25:50 git add .
-
 document.addEventListener("mousemove" , function(dets) {
   gsap.to("#flag" , {
     x:dets.x,
@@ -198,3 +189,13 @@ document.querySelector("#mid3").addEventListener("mouseleave" , function(){
   })
 })
 
+
+locomotive()
+loadingAnimation()
+cursorAnimation()
+imageAnimation()
+
+
+// setTimeout - some kind of delay
+// setIntervel - some kind of Loop
+// 1:25:50 git add .
